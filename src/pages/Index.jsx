@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Flex, Heading, Input, InputGroup, InputLeftElement, Stack, Tag, Text, Button, VStack, HStack, Avatar, useColorModeValue, IconButton, FormControl, FormLabel, Textarea, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, useDisclosure } from "@chakra-ui/react";
+import Navbar from "../components/Navbar";
 import { FaSearch, FaEnvelope, FaFilter, FaUserTie } from "react-icons/fa";
 import Footer from "../components/Footer";
 
@@ -33,6 +34,7 @@ const Index = () => {
 
   return (
     <Box p={8}>
+      <Navbar />
       <VStack spacing={8}>
         <Heading as="h1" size="xl">
           React Particles Marketplace
