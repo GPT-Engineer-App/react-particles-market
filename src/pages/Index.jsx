@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Flex, Heading, Input, InputGroup, InputLeftElement, Stack, Tag, Text, Button, VStack, HStack, Avatar, useColorModeValue, IconButton, FormControl, FormLabel, Textarea, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, useDisclosure } from "@chakra-ui/react";
 import { FaSearch, FaEnvelope, FaFilter, FaUserTie } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 const developers = [
   { id: 1, name: "John Doe", location: "New York, USA", technologies: ["React", "Node.js", ".NET"] },
@@ -65,6 +66,7 @@ const Index = () => {
           ))}
         </VStack>
       </VStack>
+      <Footer />
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
